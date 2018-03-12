@@ -3,7 +3,7 @@ $(document).ready(function() {
 var topics = [];
 
 	//Function with AJAX call to GIPHY; Q parameterc for API link set to search term, limit 10 results
-  //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
+  //Create div with  still and animate image sources with "data-state", "data-still" and "data-animate" attributes
  	function displayGIPHY() {
 
 	var x = $(this).data("search");
