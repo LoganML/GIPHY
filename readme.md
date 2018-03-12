@@ -20,10 +20,7 @@
 - A form was implemented to take the value from a user input box and add it into the `topics` array.
 - CSS Bootstrap was used to arrange the page into columns and display the gifs in a gallery format.
 - AJAX Call to Giphy's API was created to access the images by topic entered.
-- Event listeners on "click" were utilized as follows:
-	- To execute the function that adds topics to the array: $("#addShow").on("click", function(event)
-	- To display the gifs to the page by clicking on the topic buttons: $(document).on("click", "#show", displayNetflixShow).
-	- To pause and play the gifs by clicking on the Gifs: $(document).on("click", ".netflixGiphy", pausePlayGifs).
+- Event listeners on "click" were used!
 
 -------------
 
