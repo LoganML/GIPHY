@@ -1,6 +1,5 @@
 # HW6 - {GiphyAPI - GifTastic}
-Homework week 6 for UCLA Coding BootCamp.
-This assignment makes use of the GIPHY API to make a dynamic web page that populates with gifs of your choice.
+
 
 ## This app displays buttons related to a certain topic and allows you to add search terms to generate additional buttons that when clicked, accesses the GIPHY API and generates 10 static GIPHY images. Click on an image to pause or play the GIF.
 
