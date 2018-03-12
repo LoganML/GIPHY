@@ -43,7 +43,7 @@ var topics = [];
 }
 
   //Submit button click event takes search term from form input, trims and pushes to topics array, displays button
-	$("#addShow").on("click", function(event) {
+	$("#addGiphy").on("click", function(event) {
         event.preventDefault();
         var newShow = $("#gifinput").val().trim();
         topics.push(newShow);
