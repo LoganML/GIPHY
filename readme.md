@@ -27,42 +27,41 @@
 
 
 ```
- 	function displayNetflixShow() {
+    function displayGIPHY() {
 
-	var x = $(this).data("search");
-	console.log(x);
+    var x = $(this).data("search");
+    console.log(x);
 
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=7SlfZ5GZOalcYWFExn2BZmOlPYTh2poL&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=dc6zaTOxFJmzC&limit=10";
 
-	console.log(queryURL);
+    console.log(queryURL);
 
-	$.ajax({
-          url: queryURL,
-          method: "GET"
-        }).done(function(response) {
-        	var results = response.data;
-        	console.log(results);
-        	for (var i = 0; i < results.length; i++) {
-        	
-        	var showDiv = $("<div class='col-md-4'>");
+$.ajax({
+    url: queryURL,
+    method: "GET"
+    }).done(function(response) {
+    var results = response.data;
+    console.log(results);
+    for (var i = 0; i < results.length; i++) {
 
-        	var rating = results[i].rating;
-        	var defaultAnimatedSrc = results[i].images.fixed_height.url;
-        	var staticSrc = results[i].images.fixed_height_still.url;
-        	var showImage = $("<img>");
-        	var p = $("<p>").text("Rating: " + rating);
+    var showDiv = $("<div class='col-md-4'>");
 
-        	showImage.attr("src", staticSrc);
-        	showImage.addClass("netflixGiphy");
-        	showImage.attr("data-state", "still");
-        	showImage.attr("data-still", staticSrc);
-        	showImage.attr("data-animate", defaultAnimatedSrc);
-        	showDiv.append(p);
-        	showDiv.append(showImage);
-        	$("#gifArea").prepend(showDiv);
+    var rating = results[i].rating;
+    var defaultAnimatedSrc = results[i].images.fixed_height.url;
+    var staticSrc = results[i].images.fixed_height_still.url;
+    var showImage = $("<img>");
+    var p = $("<p>").text("Rating: " + rating);
 
-        }
-	});
+    showImage.attr("src", staticSrc);
+    showImage.addClass("showGiphy");
+    showImage.attr("data-state", "still");
+        showImage.attr("data-still", staticSrc);
+        showImage.attr("data-animate", defaultAnimatedSrc);
+        showDiv.append(p);
+        showDiv.append(showImage);
+$("#gifArea").prepend(showDiv);
+
+      }
+    });
 }
-
 ```
