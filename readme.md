@@ -1,7 +1,7 @@
 # GIPHY API and AJAX
 
 
-## This app generates GIPHYs by either clicking on the buttons proivded, or adding some yourself by searching for them using the search bar.  Clicking on a button will provide you with 10 static GIPHYs that you can simply click on to play or pause them. Each GIPHY will load with a rating (g,pg,pg-13,etc).
+## This app generates GIPHYs by either clicking on the buttons proivded, or adding some yourself by searching for them using the search bar.
 
 #### The app takes the entered search term topics from a user input box and pushes them into array from which it creates buttons in the HTML. Clicking on a button grabs 10 static, non-animated gif images from the GIPHY API and places them on the page.
 - When the user clicks one of the still GIPHY images, the gif should animate. 

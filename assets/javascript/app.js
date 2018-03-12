@@ -9,7 +9,7 @@ var topics = [];
 	var x = $(this).data("search");
 	console.log(x);
 
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=7SlfZ5GZOalcYWFExn2BZmOlPYTh2poL&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 	console.log(queryURL);
 
