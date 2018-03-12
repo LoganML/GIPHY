@@ -17,7 +17,7 @@
   <h4>Click the buttons to display GIPHYs of your favorite things<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
 </div>
 
-<form class="form-inline" id="netflixSearch">
+<form class="form-inline" id="giphySearch">
   <div class="form-group">
     <label for="gifinput">Search for a GIPHY too add it to the list!</label>
     <input type="text" id="gifinput">
@@ -34,6 +34,9 @@
       <button class="btn btn-primary" id="show" data-search="American Dad">American Dad</button>
       <button class="btn btn-primary" id="show" data-search="Memes">Memes</button>
       <button class="btn btn-primary" id="show" data-search="Coding">Coding</button>
+      <button class="btn btn-primary" id="fullReset">Full Reset</button>
+      
+
 
       <div id="myButtons"></div>
     </div> <!--end of button group -->
@@ -48,8 +51,16 @@
 </div> <!-- end of row  -->
 
 
+
 <script type="text/javascript" src="assets/javascript/app.js"</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+      var fullReset = document.getElementById('fullReset');
+
+    fullReset.addEventListener('click', function(e) {
+      location.reload();
+    }, false);
+  </script>
 
 </body>
 </html>
